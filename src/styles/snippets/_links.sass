@@ -1,0 +1,28 @@
+/**
+	Default link snippet styles for Ukrposhta website project
+	Version: 1.0
+	Created: 22.07.2019
+	Author: Serhii Tiutin
+	Modified by: Serhii Tiutin
+	Website: https://ukrposhta.ua/
+	*/
+
+%default-link
+	font-size: 16px
+	line-height: 20px
+	color: $corporate-violet
+	font-family: $secondary-regular
+	transition: $tertiary-transition
+	background-image: linear-gradient(to right, $corporate-violet 0%, $corporate-violet 100%)
+	background-repeat: no-repeat
+	background-position: 0% 95%
+	background-size: 100% 1px
+	&:active,
+	&:focus
+		outline: none
+		text-decoration: none
+	&:hover
+		color: $corporate-violet
+		text-decoration: none
+		cursor: pointer
+		background-size: 0% 1px

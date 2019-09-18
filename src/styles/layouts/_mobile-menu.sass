@@ -1,0 +1,145 @@
+/**
+	Mobile menu styles for Ukrposhta website project
+	Version: 1.0
+	Created: 22.07.2019
+	Author: Serhii Tiutin
+	Modified by: Serhii Tiutin
+	Website: https://ukrposhta.ua/
+	*/
+
+.mobile-menu
+	height: 0px
+	background-color: $corporate-ghost-white
+	top: 0px
+	right: 0px
+	position: fixed
+	width: 100%
+	max-width: 100%
+	overflow: auto
+	transition: $primary-transition
+	z-index: 50000
+	.mobile-menu-wrapper
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		padding-bottom: 20px
+		.hide-menu
+			font: inherit
+			display: flex
+			overflow: visible
+			margin: 0px
+			padding: 10px 0px 0px
+			cursor: pointer
+			text-transform: none
+			color: inherit
+			border: none
+			background-color: transparent
+			height: 18px
+			.burger-box
+				position: relative
+				display: inline-block
+				width: 18px
+				height: 18px
+				.burger-inner
+					position: absolute
+					top: 2px
+					width: 18px
+					height: 2px
+					border-radius: $secondary-radius
+					background-color: $corporate-gray
+					transform: translate3d(0,15px,0) rotate(45deg)
+					&:after
+						@extend %pseudo-elem-base
+						top: 12px
+						width: 18px
+						height: 2px
+						border-radius: $secondary-radius
+						background-color: $corporate-gray
+						transform: translate3d(0,-12px,0) rotate(-90deg)
+		.mobile-menu-links-wrapper
+			.accordion
+				padding: 0px
+				.mobile-header-accordion-item
+					.accordion-headline
+						text-decoration: none
+						font-family: $primary-normal
+						color: $corporate-violet
+						font-weight: $normal-weight
+						font-size: 16px
+						line-height: 20px
+						padding: 20px 0px 0px
+						text-align: left
+						span
+							display: inline-block
+						.fas
+							color: $corporate-violet
+							position: relative
+							top: 1px
+							left: 7px
+							font-size: 1.2em
+					.collapse,
+					.collapse.show,
+					.collapsing
+						ul
+							li
+								padding-top: 10px
+								&.mobile-menu-sub-title
+									font-family: $primary-normal
+									color: $corporate-violet
+									font-weight: $normal-weight
+									font-size: 16px
+									line-height: 24px
+								a
+									font-family: $primary-regular
+									color: $corporate-gray
+									font-weight: $regular-weight
+									font-size: 16px
+									line-height: 24px
+									transition: $primary-transition
+									text-decoration: none
+									svg
+										width: 14px
+										height: 14px
+										position: relative
+										top: -2px
+										margin-right: 5px
+										#RectangleNewWindow,
+										#LineNewWindow
+											fill: $corporate-gray
+											transition: $quaternary-transition
+									&:hover
+										color: $corporate-violet
+										text-decoration: none
+										svg
+											#RectangleNewWindow,
+											#LineNewWindow
+												fill: $corporate-violet
+			.mobile-menu-links
+				text-decoration: none
+				font-family: $primary-normal
+				color: $corporate-violet
+				display: block
+				font-weight: $normal-weight
+				font-size: 16px
+				line-height: 20px
+				padding: 20px 0px 0px
+				text-align: left
+				&:hover
+					text-decoration: none
+				&.active
+					text-decoration: none
+					color: $corporate-violet
+					position: relative
+					padding-left: 45px
+					&:after
+						font-family: "Font Awesome 5 Free"
+						content: "\f0da"
+						display: inline-block
+						padding-right: 3px
+						vertical-align: middle
+						font-weight: $black-weight
+						position: absolute
+						top: 7px
+						left: 30px
+	&.active-mobile-menu
+		height: 100%

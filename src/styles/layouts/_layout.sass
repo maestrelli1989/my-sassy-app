@@ -1,0 +1,192 @@
+/**
+	Main layout styles for Ukrposhta website project
+	Version: 1.0
+	Created: 22.07.2019
+	Author: Serhii Tiutin
+	Modified by: Serhii Tiutin
+	Website: https://ukrposhta.ua/
+	*/
+
+@media (min-width: 1200px)
+	.container
+		max-width: 1200px
+
+.content
+	position: relative
+
+.inner-page-wrapper
+	background-color: $corporate-ghost-white
+	padding: 0px 0px 100px
+	.banner-wrapper
+		background-color: $corporate-orange
+		.banner
+			background-color: $corporate-orange
+			background-repeat: no-repeat
+			width: 100%
+			max-width: 1440px
+			height: 600px
+			margin: 0px auto
+			.breadcrumb-wrapper
+				.breadcrumb
+					border-color: transparent
+					.breadcrumb-item
+						&:before
+							color: $corporate-white
+						a
+							color: $corporate-white
+							&:hover
+								color: $corporate-violet
+						&.active
+							color: $corporate-white
+			.banner-headline
+				color: $corporate-white
+				font-family: $primary-bold
+				font-size: 60px
+				font-weight: $bold-weight
+				line-height: 70px
+				padding: 95px 0px 0px
+			.banner-desc
+				color: $corporate-violet
+				font-family: $secondary-regular
+				font-size: 16px
+				line-height: 30px
+				padding: 30px 0px 0px
+				width: 100%
+				max-width: 470px
+			.btn-blue
+				@extend %btn-blue
+				max-width: 370px!important
+				margin-top: 50px
+	.scroll-nav
+		background-color: $corporate-white
+		.container
+			.links-wrapper
+				display: flex
+				align-items: flex-start
+				justify-content: space-between
+				a
+					line-height: 70px
+					color: $corporate-gray
+					font-family: $primary-bold
+					font-size: 18px
+					font-weight: $bold-weight
+					text-decoration: none
+					transition: $primary-transition
+					svg
+						margin-right: 20px
+					#about-service-icon,
+					#tariffs-icon,
+					#dispatch-icon,
+					#faq-icon,
+					#target-icon,
+					#for-business-icon
+						transition: $senary-transition
+					#calendar-icon,
+					#partners-icon,
+					#settings-icon,
+					#documents-icon,
+					#history-icon,
+					#for-business-icon-fill,
+					#students-icon,
+					#book-icon,
+					#preference-icon
+						transition: $quaternary-transition
+					&:hover
+						color: $corporate-violet
+						text-decoration: none
+						#about-service-icon,
+						#tariffs-icon,
+						#dispatch-icon,
+						#faq-icon,
+						#target-icon,
+						#for-business-icon
+							stroke: $corporate-violet
+						#calendar-icon,
+						#partners-icon,
+						#settings-icon,
+						#documents-icon,
+						#history-icon,
+						#for-business-icon-fill,
+						#students-icon,
+						#book-icon,
+						#preference-icon
+							fill: $corporate-violet
+	.content-wrapper
+		padding: 70px 0px 0px
+		.preferences-block
+			display: flex
+			flex-direction: row
+			justify-content: flex-start
+			flex-wrap: wrap
+			padding: 30px 0px 0px
+			.preferences-item
+				margin-bottom: 30px
+				h4
+					padding-bottom: 10px
+				p
+					color: $corporate-gray
+					padding-bottom: 0px
+				svg
+					width: 115px
+					height: 115px
+				.item-link
+					color: $corporate-gray
+					font-family: $primary-regular
+					font-size: 16px
+					line-height: 20px
+					display: inline-block
+					transition: $tertiary-transition
+					background-image: linear-gradient(to right, $corporate-gray 0%, $corporate-gray 100%)
+					background-repeat: no-repeat
+					background-position: 0% 95%
+					background-size: 100% 1px
+					&:hover
+						color: $corporate-gray
+						text-decoration: none
+						cursor: pointer
+						background-size: 0% 1px
+
+@keyframes breathing
+	0%
+		transform: scale(.9)
+	50%
+		transform: scale(1)
+	100%
+		transform: scale(.9)
+
+#scrollTopBtn
+	display: none
+	position: fixed
+	bottom: 50px
+	right: 150px
+	z-index: 99999
+	border: 2px solid $corporate-violet
+	outline: 0
+	background-color: $corporate-violet
+	color: $corporate-ghost-white
+	cursor: pointer
+	padding: 15px 20px
+	border-radius: $primary-radius
+	transition: $primary-transition
+	animation: breathing 2s ease-out infinite normal
+	opacity: 1
+	&:active,
+	&:focus,
+	&:hover
+		text-decoration: none
+		background-color: $corporate-ghost-white
+		color: $corporate-violet
+	.fas
+		font-size: 20px
+
+@media screen and (max-width: 1400px)
+	#scrollTopBtn
+		right: 50px
+
+@media screen and (max-width: 767px)
+	#scrollTopBtn
+		right: 5px
+		padding: 13px 15px
+	#scrollTopBtn
+		.fa
+			font-size: 16px

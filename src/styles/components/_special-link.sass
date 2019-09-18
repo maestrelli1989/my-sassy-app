@@ -1,0 +1,37 @@
+/**
+	Special link styles for Ukrposhta website project
+	Version: 1.0
+	Created: 22.07.2019
+	Author: Serhii Tiutin
+	Modified by: Serhii Tiutin
+	Website: https://ukrposhta.ua/
+	*/
+
+.special-links
+	font-size: 18px
+	line-height: 24px
+	display: block
+	padding-bottom: 20px
+	position: relative
+	svg
+		position: absolute
+		top: 4px
+	span
+		color: $corporate-violet
+		font-family: $secondary-regular
+		font-size: 18px
+		line-height: 24px
+		transition: $primary-transition
+		padding-left: 40px
+	#LineNewWindow,
+	#RectangleNewWindow
+		fill: $corporate-violet
+		transition: $primary-transition
+	&:hover
+		text-decoration: none
+		cursor: pointer
+		span
+			color: $corporate-gray
+		#LineNewWindow,
+		#RectangleNewWindow
+			fill: $corporate-gray

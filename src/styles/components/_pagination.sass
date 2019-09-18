@@ -1,0 +1,52 @@
+/**
+	Pagination styles for Ukrposhta website project
+	Version: 1.0
+	Created: 22.07.2019
+	Author: Serhii Tiutin
+	Modified by: Serhii Tiutin
+	Website: https://ukrposhta.ua/
+	*/
+
+.pagination
+	margin-top: 15px
+	.page-item
+		padding: 0px
+		position: static
+		font-size: 0px
+		line-height: 0px
+		color: inherit
+		font-family: inherit
+		&:before
+			display: none
+		&:focus
+			outline: none
+			box-shadow: none
+		.page-link
+			transition: $primary-transition
+			color: $corporate-gray
+			font-family: $primary-normal
+			font-weight: $normal-weight
+			font-size: 14px
+			background: none
+			background-color: transparent
+			border: none
+			display: block
+			position: static
+			&:before
+				display: none
+			&:focus
+				outline: none
+				box-shadow: none
+			&:hover
+				color: $corporate-violet
+		&.active
+			.page-link
+				color: $corporate-violet
+				font-family: $primary-normal
+				font-weight: $normal-weight
+				font-size: 14px
+				background: none
+				background-color: transparent
+				border: none
+				display: block
+				position: static

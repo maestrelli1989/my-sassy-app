@@ -1,0 +1,82 @@
+/**
+	Style sheet for Ukrposhta website project page "Smartbox"
+	Version: 1.0
+	Created: 22.07.2019
+	Author: Serhii Tiutin
+	Modified by: Serhii Tiutin
+	Website: https://ukrposhta.ua/
+	*/
+
+.smartbox-page
+	.banner-wrapper
+		.banner
+			background-image: url('../images/banners/smartbox.png')
+			background-size: 36%
+			background-position: right 220px top 70px
+	.content-wrapper
+		.accordion
+			padding-bottom: 0px
+		.additional-link-wrapper
+			margin-top: 0px
+			margin-bottom: 0px
+			.additional-link
+				margin-bottom: 0px
+		.services-block
+			display: flex
+			flex-direction: row
+			flex-wrap: wrap
+			justify-content: space-between
+			padding: 0px
+			margin: 0px auto
+			.services-item
+				height: 380px
+				width: 100%
+				max-width: 280px
+				border: 2px solid $corporate-gainsboro
+				border-radius: $primary-radius
+				padding: 10px 0px 0px
+				margin-bottom: 30px
+				img
+					text-align: center
+					display: block
+					margin: 0px auto 15px
+				.content
+					padding: 0px 30px
+					.top-half
+						display: flex
+						flex-direction: row
+						justify-content: space-between
+						align-items: center
+						h4
+							padding: 0px 0px 15px
+							display: inline-block
+						.size
+							display: inline-block
+							padding: 0px 0px 18px
+							color: $corporate-gray
+							font-family: $secondary-regular
+							font-size: 14px
+							line-height: 32px
+					.bottom-half
+						padding-top: 15px
+						.line
+							display: flex
+							flex-direction: row
+							justify-content: space-between
+							align-items: center
+							.quantity
+								display: inline-block
+								color: $corporate-violet
+								font-family: $secondary-regular
+								font-size: 14px
+								line-height: 24px
+								text-align: left
+							.price
+								display: inline-block
+								color: $corporate-violet
+								font-family: $secondary-regular
+								font-size: 14px
+								line-height: 24px
+								text-align: right
+					hr
+						margin: 0px

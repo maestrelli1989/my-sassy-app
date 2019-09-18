@@ -1,0 +1,280 @@
+/**
+	Style sheet for Ukrposhta website project page "Home"
+	Version: 1.0
+	Created: 22.07.2019
+	Author: Serhii Tiutin
+	Modified by: Serhii Tiutin
+	Website: https://ukrposhta.ua/
+	*/
+
+.slider
+	height: 550px
+	margin-bottom: 0px!important
+	position: relative
+	&:focus,
+	&:active
+		outline: none
+	.slick-list
+		width: 100%
+		.slider-item
+			height: 550px
+			background-color: #FEC524
+			&:focus,
+			&:active
+				outline: none
+			.banner-img-desktop
+				height: 550px
+				margin-left: auto
+			.banner-img-tablet
+				display: none
+				margin-left: auto
+			.banner-img-mobile
+				display: none
+			.slider-item-content
+				position: absolute
+				top: 0px
+				padding-top: 20px
+				width: 100%
+				max-width: 450px
+				h2
+					color: $corporate-white
+					text-align: left
+				p
+					text-align: left
+					padding: 0px
+	.slick-dots
+		left: 0px
+		right: 0px
+		bottom: 180px
+		text-align: left
+		margin: 0px auto
+		padding: 0px 15px!important
+		li
+			button
+				&:before
+					color: $corporate-white
+					font-size: 10px
+					opacity: 0.5
+					transition: $primary-transition
+			&:hover
+				button
+					cursor: pointer
+					&:before
+						color: $corporate-white
+						font-size: 10px
+						opacity: 1
+						cursor: pointer
+			&.slick-active
+				button
+					&:before
+						color: $corporate-white
+						opacity: 1
+
+.tracking-block
+	position: absolute
+	top: 395px
+	width: 100%
+	z-index: 1
+	.container
+		.block-top-line
+			.tracking-form
+				.form-group
+					position: relative
+					margin-bottom: 30px
+					input[type="text"]
+						padding: 30px 230px 30px 30px
+						box-shadow: $primary-box-shadow
+					.button-submit
+						position: absolute
+						right: 30px
+						top: 30px
+						background-color: $corporate-white
+						border: none
+						padding: 0px
+						line-height: 20px
+						&:focus,
+						&:active
+							outline: 0
+							box-shadow: none
+						&:hover
+							cursor: pointer
+						.default-btn-content
+							position: relative
+							right: 0px
+							top: 0px
+							color: $corporate-violet
+							font-family: $primary-bold
+							font-size: 20px
+							font-weight: $bold-weight
+							display: block
+						.mobile-btn-content
+							display: none
+							position: relative
+							background: transparent url(../images/search-icon.png) no-repeat
+							width: 16px
+							height: 16px
+		.block-bottom-line
+			.block-item-wrapper
+				.block-item
+					line-height: 90px
+					width: 100%
+					max-width: 100%
+					border-radius: $primary-radius
+					background-color: $corporate-white
+					box-shadow: $primary-box-shadow
+					display: block
+					transition: $primary-transition
+					padding: 0px 30px
+					text-align: center
+					&:focus
+						outline: none
+					span
+						color: $corporate-gray
+						font-family: $primary-bold
+						font-size: 16px
+						font-weight: $bold-weight
+						line-height: 20px
+						display: inline-block
+						transition: $primary-transition
+					#CalcIconPath-1,
+					#CalcIconPath-2,
+					#CalcIconRectangle-1,
+					#CalcIconRectangle-2,
+					#CardIconPath-3,
+					#BillIconRectangle-1,
+					#BillIconRectangle-2,
+					#BillIconRectangle-3,
+					#BillIconLine,
+					#ParcelIconPath-1,
+					#ParcelIconPath-2,
+					#ParcelIconRectangle,
+					#ParcelIconPath-3
+						transition: $quaternary-transition
+					#CalcIconGroup-1,
+					#CalcIconGroup-2,
+					#CardIconOval-1,
+					#CardIconPath-1,
+					#CardIconPath-2,
+					#CardIconRectangle-1,
+					#CardIconRectangle-2
+						transition: $senary-transition
+					&:hover
+						text-decoration: none
+						background-color: $corporate-white
+						box-shadow: $primary-box-shadow
+						span
+							color: $corporate-violet
+						#CalcIconPath-1,
+						#CalcIconPath-2,
+						#CalcIconRectangle-1,
+						#BillIconRectangle-1,
+						#BillIconRectangle-2,
+						#BillIconLine,
+						#ParcelIconPath-1,
+						#ParcelIconPath-2,
+						#ParcelIconRectangle
+							fill: $corporate-violet
+						#CalcIconGroup-1,
+						#CalcIconGroup-2,
+						#CardIconOval-1,
+						#CardIconPath-1,
+						#CardIconPath-2,
+						#CardIconRectangle-1,
+						#CardIconRectangle-2
+							stroke: $corporate-violet
+						#CalcIconRectangle-2,
+						#CardIconPath-3,
+						#BillIconRectangle-3,
+						#ParcelIconPath-3
+							fill: $corporate-orange
+					svg
+						display: inline-block
+						margin-right: 20px
+
+.services-block
+	background-color: $corporate-ghost-white
+	padding-top: 120px
+	.container
+		.postal-services-block
+			padding-bottom: 70px
+			.svg-link-wrapper
+				padding: 0px 15px
+				position: relative
+				width: 100%
+				min-height: 1px
+		.financial-services-block
+			padding-top: 90px
+			padding-bottom: 50px
+
+.zip-code-block
+	background-color: $corporate-violet
+	padding-top: 120px
+	padding-bottom: 150px
+	.container
+		.zip-code-wrapper
+			background-image: url(../images/zip-code-block-background.png)
+			background-repeat: no-repeat
+			background-size: 1053px 372px
+			background-position-y: bottom
+			height: 100%
+			.row
+				h2
+					color: $corporate-ghost-white
+				p
+					color: $corporate-gray
+				form
+					max-width: 767px
+					margin-top: 35px
+					input[type=text],
+					.btn-orange
+						max-width: 100%
+						line-height: 80px
+
+.middle-block
+	background-color: $corporate-ghost-white
+	padding-top: 100px
+	padding-bottom: 60px
+	.container
+		.news-block
+			margin-bottom: 50px
+		.mobile-app-block
+			background-image: url(../images/mobile-app-block-background.png)
+			background-size: cover
+			background-repeat: no-repeat
+			padding: 80px
+			margin-bottom: 100px
+			width: 100%
+			max-width: 1170px
+			height: 500px
+			border-radius: $primary-radius
+			h2
+				color: $corporate-white
+				padding: 0px 0px 30px
+			p
+				color: $corporate-white
+				padding: 0px 0px 90px
+			.links-block
+				display: flex
+				flex-direction: row
+				align-items: flex-start
+				justify-content: space-between
+				width: 100%
+				max-width: 370px
+				a
+					display: inline-block
+
+.branches-block
+	background-color: #FECA4B
+	height: 500px
+	padding-top: 90px
+	padding-bottom: 50px
+	.container
+		height: 100%
+		.branches-block-content
+			background-image: url(../images/branches-block-background.png)
+			background-repeat: no-repeat
+			background-size: 1170px 362px
+			height: 100%
+			.block-headline
+				color: $corporate-violet
+				padding-bottom: 30px

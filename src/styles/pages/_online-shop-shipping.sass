@@ -1,0 +1,120 @@
+/**
+	Style sheet for Ukrposhta website project page "Online shop shipping"
+	Version: 1.0
+	Created: 22.07.2019
+	Author: Serhii Tiutin
+	Modified by: Serhii Tiutin
+	Website: https://ukrposhta.ua/
+	*/
+
+.online-shop-shipping-page
+	padding: 0px!important
+	.form-block
+		background-color: #feca4b
+		padding: 80px 0px
+		margin-top: 100px
+		h3
+			padding-top: 0px
+	.container
+		.photo-slider
+			margin-bottom: 20px
+			& + h4
+				padding-top: 0px
+			.slick-prev
+				left: 40px
+				z-index: 1
+				&:before
+					display: none
+				.fas
+					font-size: 26px
+					color: $corporate-white
+			.slick-next
+				right: 40px
+				z-index: 1
+				&:before
+					display: none
+				.fas
+					font-size: 26px
+					color: $corporate-white
+			.img-wrapper
+				img
+					border-radius: $primary-radius
+			&:focus
+				outline: 0
+			.slick-track
+				&:focus
+					outline: 0
+				.img-wrapper
+					&:focus
+						outline: 0
+			.slick-dots
+				bottom: 25px
+				li
+					button
+						&:before
+							font-size: 10px
+							opacity: 0.5
+							color: $corporate-white
+							transition: $primary-transition
+					&.slick-active
+						button
+							&:before
+								opacity: 1
+		.free-shipping-wrapper
+			justify-content: center
+			& + h4
+				padding-top: 0px
+			.free-shipping-item
+				background-color: $corporate-white
+				border-radius: $primary-radius
+				width: 100%
+				max-width: 270px
+				height: 145px
+				display: block
+				text-align: center
+				line-height: 145px
+				margin-bottom: 20px
+				transition: $primary-transition
+				&:hover
+					cursor: pointer
+					text-decoration: none
+					box-shadow: $primary-box-shadow
+				img
+					width: 100%
+		.shop-row
+			justify-content: flex-start
+			& + h4
+				padding-top: 0px
+			.hidden-item
+				display: none
+			.shop-item
+				background-color: $corporate-white
+				border-radius: $primary-radius
+				width: 100%
+				max-width: 270px
+				height: 145px
+				display: block
+				text-align: center
+				line-height: 145px
+				margin-bottom: 20px
+				transition: $primary-transition
+				&:hover
+					cursor: pointer
+					text-decoration: none
+					box-shadow: $primary-box-shadow
+				img
+					width: 100%
+				&.toggle-wrapper
+					cursor: pointer
+					a
+						font-size: 14px
+						line-height: 26px
+						font-family: $primary-bold
+						color: $corporate-gray
+						transition: $primary-transition
+						font-weight: $bold-weight
+						text-decoration: none
+					&:hover
+						text-decoration: none
+						a
+							color: $corporate-violet

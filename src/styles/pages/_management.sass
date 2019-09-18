@@ -1,0 +1,67 @@
+/**
+	Style sheet for Ukrposhta website project page "Management"
+	Version: 1.0
+	Created: 22.07.2019
+	Author: Serhii Tiutin
+	Modified by: Serhii Tiutin
+	Website: https://ukrposhta.ua/
+	*/
+
+.management-page
+	.management-wrapper
+		display: flex
+		flex-direction: row
+		flex-wrap: wrap
+		justify-content: space-between
+		width: 100%
+		max-width: 1170px
+		.manager-item
+			display: flex
+			flex-direction: row
+			flex-basis: 570px
+			background-color: $corporate-white
+			margin-bottom: 30px
+			border-radius: $primary-radius
+			transition: $primary-transition
+			&:hover
+				box-shadow: $primary-box-shadow
+			.flex-left
+				height: 220px
+				width: 100%
+				max-width: 220px
+				img
+					width: 220px
+					height: 220px
+					border-top-left-radius: 10px
+					border-bottom-left-radius: 10px
+			.flex-right
+				padding: 25px
+				width: 100%
+				max-width: 350px
+				h5
+					line-height: 28px
+					padding-top: 0px
+					padding-bottom: 5px
+				p
+					color: $corporate-gray
+					font-family: $secondary-regular
+					font-size: 14px
+					line-height: 24px
+					padding-bottom: 10px
+					+ p
+						color: $corporate-violet
+			&.ceo-item
+				flex-basis: 1170px
+				.flex-left
+					height: 310px
+					width: 100%
+					max-width: 310px
+					img
+						width: 310px
+						height: 310px
+						border-top-left-radius: 10px
+						border-bottom-left-radius: 10px
+				.flex-right
+					padding: 25px
+					width: calc(100% - 310px)
+					max-width: 100%

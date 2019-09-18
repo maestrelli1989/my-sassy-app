@@ -1,0 +1,62 @@
+/**
+	News block styles for Ukrposhta website project
+	Version: 1.0
+	Created: 22.07.2019
+	Author: Serhii Tiutin
+	Modified by: Serhii Tiutin
+	Website: https://ukrposhta.ua/
+	*/
+
+.news-wrapper
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+	flex-wrap: wrap
+	.news-item
+		height: 250px
+		width: 100%
+		max-width: 570px
+		border-radius: $primary-radius
+		background-color: $corporate-white
+		margin-bottom: 30px
+		padding: 30px
+		transition: $primary-transition
+		display: block
+		&:hover
+			background-color: $corporate-white
+			box-shadow: $primary-box-shadow
+			text-decoration: none
+		.news-title-block
+			display: flex
+			flex-direction: row
+			.left-side
+				width: 100%
+				max-width: 100px
+				img
+					width: 100px
+					height: 100px
+					border-radius: $tertiary-radius
+			.right-side
+				padding-left: 20px
+				width: calc(100% - 100px)
+				.date
+					color: $corporate-gray
+					font-family: $secondary-regular
+					font-size: 14px
+					line-height: 24px
+					padding-bottom: 5px
+				h6
+					padding: 0px
+					overflow: hidden
+					display: -webkit-box
+					-webkit-line-clamp: 3
+					-webkit-box-orient: vertical
+					max-height: 75px
+		p
+			padding: 20px 0px 0px
+			overflow: hidden
+			display: -webkit-box
+			-webkit-line-clamp: 2
+			-webkit-box-orient: vertical
+			position: relative
+			max-height: 75px

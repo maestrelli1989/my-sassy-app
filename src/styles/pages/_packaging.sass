@@ -1,0 +1,61 @@
+/**
+	Style sheet for Ukrposhta website project page "Packaging"
+	Version: 1.0
+	Created: 22.07.2019
+	Author: Serhii Tiutin
+	Modified by: Serhii Tiutin
+	Website: https://ukrposhta.ua/
+	*/
+
+.packaging-page
+	h4
+		padding-bottom: 30px
+		& + .packaging-row
+			padding-top: 0px
+		& + p
+			margin-top: -10px
+	.packaging-row
+		& + h4
+			padding-top: 0px
+		.packaging-col
+			.packaging-item
+				margin: 0px auto 30px
+				background-color: $corporate-white
+				width: 100%
+				max-width: 100%
+				// height: 450px
+				padding: 20px
+				border-radius: $primary-radius
+				transition: $primary-transition
+				box-shadow: none
+				img
+					display: block
+					margin: 0px auto
+					text-align: center
+				h6
+					font-size: 16px
+					line-height: 20px
+					padding-bottom: 10px
+					.size-info
+						display: block
+						color: $corporate-gray
+						font-family: $secondary-regular
+						font-size: 14px
+						line-height: 24px
+						font-weight: $regular-weight
+						padding-bottom: 30px
+				.price-info
+					padding-top: 10px
+					color: $corporate-violet
+					font-family: $secondary-regular
+					font-size: 14px
+					line-height: 24px
+					width: 100%
+					max-width: 100%
+					position: relative
+					span
+						position: absolute
+						right: 0px
+				&:hover
+					box-shadow: $primary-box-shadow
+					cursor: pointer

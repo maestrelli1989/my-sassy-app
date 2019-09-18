@@ -1,0 +1,20 @@
+<app-header></app-header>
+<div id="main">
+	<div class="content">
+		<div class="inner-page-wrapper">
+			<div class="container">
+				<h3>Розрахунок вартості</h3>
+				<div class="pills-wrapper nav flex-column flex-sm-row">
+					<a class="pill flex-sm-fill text-sm-center one" data-toggle="pill" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+						true}">В межах України</a>
+					<a class="pill flex-sm-fill text-sm-center one" data-toggle="pill" routerLink="calc-international" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+						true}">За кордон</a>
+				</div>
+				<div class="tab-content">
+					<router-outlet></router-outlet>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<app-footer></app-footer>

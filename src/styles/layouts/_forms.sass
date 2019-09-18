@@ -1,0 +1,199 @@
+/**
+	Form element styles for Ukrposhta website project
+	Version: 1.0
+	Created: 22.07.2019
+	Author: Serhii Tiutin
+	Modified by: Serhii Tiutin
+	Website: https://ukrposhta.ua/
+	*/
+
+input[type=text]:focus:-webkit-input-placeholder,
+input[type=password]:focus:-webkit-input-placeholder,
+input[type=email]:focus:-webkit-input-placeholder,
+input[type=number]:focus:-webkit-input-placeholder,
+input[type=search]:focus:-webkit-input-placeholder
+	color: transparent
+
+input[type=text]:focus::-webkit-input-placeholder,
+input[type=password]:focus::-webkit-input-placeholder,
+input[type=email]:focus::-webkit-input-placeholder,
+input[type=number]:focus::-webkit-input-placeholder,
+input[type=search]:focus::-webkit-input-placeholder
+	color: transparent
+
+input[type=text]:focus:-moz-placeholder,
+input[type=password]:focus:-moz-placeholder,
+input[type=email]:focus:-moz-placeholder,
+input[type=number]:focus:-moz-placeholder,
+input[type=search]:focus:-moz-placeholder
+	color: transparent
+
+input[type=text]:focus::-moz-placeholder,
+input[type=password]:focus::-moz-placeholder,
+input[type=email]:focus::-moz-placeholder,
+input[type=number]:focus::-moz-placeholder,
+input[type=search]:focus::-moz-placeholder
+	color: transparent
+
+input[type=text]:focus:-ms-input-placeholder,
+input[type=password]:focus:-ms-input-placeholder,
+input[type=email]:focus:-ms-input-placeholder,
+input[type=number]:focus:-ms-input-placeholder,
+input[type=search]:focus:-ms-input-placeholder
+	color: transparent
+
+/**
+	Select
+	*/
+
+.select-wrapper
+	position: relative
+	max-width: 570px
+	&:after
+		font-family: "Font Awesome 5 Free"
+		content: "\f107"
+		display: inline-block
+		vertical-align: middle
+		font-weight: $black-weight
+		position: absolute
+		top: 30px
+		right: 30px
+		color: $corporate-violet
+		font-size: 20px
+	select
+		height: 80px
+		width: 100%
+		max-width: 570px
+		background-color: $corporate-white
+		color: $corporate-gray
+		border: none
+		border-radius: $primary-radius
+		box-shadow: $secondary-box-shadow
+		padding: 0px 30px
+		color: $corporate-violet
+		font-family: $primary-regular
+		font-weight: $regular-weight
+		font-size: 16px
+		line-height: 24px
+		appearance: none
+		display: inline-block
+		overflow: hidden
+		&::-ms-expand
+			display: none
+		&:focus
+			outline: none
+
+/**
+	Input text, input email, input password, input number
+	*/
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"]
+	height: 80px
+	width: 100%
+	max-width: 570px
+	border-radius: $primary-radius
+	background-color: $corporate-white
+	color: $corporate-violet
+	font-family: $primary-regular
+	font-weight: $regular-weight
+	font-size: 16px
+	line-height: 16px
+	padding: 0px 30px
+	border: none
+	display: inline-block
+	letter-spacing: 0.5px
+	&:active,
+	&:focus
+		outline: none
+		box-shadow: none
+	&::-ms-clear
+		display: none
+
+/**
+	Input search
+	*/
+
+input[type="search"]
+	outline: none
+	position: relative
+	-webkit-appearance: textfield
+	box-sizing: content-box
+	font-family: $primary-regular
+	font-weight: $regular-weight
+	color: $corporate-violet
+	font-size: 16px
+	line-height: 16px
+	background: transparent url(../images/search-icon.png) no-repeat 12px 12px
+	border: none
+	padding: 9px 10px 9px 35px
+	width: 0px
+	transition: $primary-transition
+	&::-webkit-search-decoration,
+	&::-webkit-search-cancel-button
+		display: none
+	&:hover
+		cursor: pointer
+	&:focus
+		width: 155px
+		background-color: $corporate-white
+		border-color: $corporate-gray
+		box-shadow: $tertiary-box-shadow
+		border-radius: $primary-radius
+		outline: none
+	&:-moz-placeholder,
+	&::-webkit-input-placeholder
+		color: $corporate-gray
+	&::-ms-clear
+		display: none
+
+/**
+	Textarea
+	*/
+
+textarea
+	height: auto
+	width: 100%
+	max-width: 570px
+	border-radius: $primary-radius
+	background-color: $corporate-white
+	color: $corporate-violet
+	font-family: $primary-regular
+	font-weight: $regular-weight
+	font-size: 16px
+	line-height: 16px
+	padding: 30px
+	border: none
+	display: inline-block
+	letter-spacing: 0.5px
+	&:active,
+	&:focus
+		outline: none
+		box-shadow: none
+	&::-ms-clear
+		display: none
+
+
+.street-input-field-wrapper
+	flex: 0 0 66.666666%
+	max-width: 66.666666%
+
+.house-input-field-wrapper
+	flex: 0 0 33.333333%
+	max-width: 33.333333%
+
+.form,
+form
+	.form-group
+		margin-bottom: 30px
+		.btn-orange
+			@extend %btn-orange
+			max-width: 570px
+		.btn-blue
+			@extend %btn-blue
+			max-width: 570px
+		.btn-white
+			@extend %btn-white
+			max-width: 570px

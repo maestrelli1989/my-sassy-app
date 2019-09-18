@@ -1,0 +1,41 @@
+/**
+	Style sheet for Ukrposhta website project page "Our partners"
+	Version: 1.0
+	Created: 22.07.2019
+	Author: Serhii Tiutin
+	Modified by: Serhii Tiutin
+	Website: https://ukrposhta.ua/
+	*/
+
+.our-partners-page
+	.our-partners-list
+		display: flex
+		flex-direction: row
+		align-items: flex-start
+		justify-content: space-between
+		flex-wrap: wrap
+		.our-partners-list-item
+			width: 100%
+			max-width: 270px
+			margin: 0px auto 30px
+			.image-wrapper
+				display: block
+				border-radius: $primary-radius
+				margin: 0px auto
+				img
+					width: 270px
+					height: 270px
+					transition: $primary-transition
+			.partner-name
+				color: $corporate-violet
+				font-family: $secondary-regular
+				font-size: 16px
+				line-height: 30px
+				text-align: center
+				width: 100%
+				max-width: 270px
+				padding-top: 15px
+			&:hover
+				text-decoration: none
+				img
+					box-shadow: $primary-box-shadow

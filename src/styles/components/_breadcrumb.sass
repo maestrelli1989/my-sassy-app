@@ -1,0 +1,49 @@
+/**
+	Breadcrumb styles for Ukrposhta website project
+	Version: 1.0
+	Created: 22.07.2019
+	Author: Serhii Tiutin
+	Modified by: Serhii Tiutin
+	Website: https://ukrposhta.ua/
+	*/
+
+.breadcrumb-wrapper
+	.breadcrumb
+		background-color: transparent
+		border-bottom: 1px solid $corporate-gainsboro
+		padding: 17px 0px
+		margin: 0px auto
+		.breadcrumb-item
+			padding: 0px 0px 0px 15px
+			&:before
+				position: static
+				content: ">"
+				color: $corporate-gray
+				margin: 0px
+				font-family: $secondary-regular
+				font-weight: $regular-weight
+				font-size: 14px
+			& + .breadcrumb-item
+				padding-left: 15px
+				&:before
+					padding-right: 15px
+			a
+				font-family: $secondary-regular
+				font-size: 14px
+				line-height: 31px
+				color: $corporate-gray
+				background-image: none
+				display: inline-block
+				transition: $primary-transition
+				&:hover
+					color: $corporate-violet
+			&.active
+				font-family: $secondary-regular
+				font-size: 14px
+				line-height: 31px
+				color: $corporate-gray
+				display: inline-block
+			&:first-child
+				padding: 0px
+				&:before
+					display: none

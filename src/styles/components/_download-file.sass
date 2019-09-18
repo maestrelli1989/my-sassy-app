@@ -1,0 +1,42 @@
+/**
+	Download .pdf link styles for Ukrposhta website project
+	Version: 1.0
+	Created: 22.07.2019
+	Author: Serhii Tiutin
+	Modified by: Serhii Tiutin
+	Website: https://ukrposhta.ua/
+	*/
+
+.download-pdf
+	display: flex
+	align-items: center
+	margin-top: -10px
+	margin-bottom: 20px
+	padding: 0px 10px
+	span
+		color: $corporate-gray
+		font-family: $primary-normal
+		font-size: 14px
+		font-weight: $normal-weight
+		line-height: 24px
+		text-decoration: none
+		display: inline-block
+		transition: $primary-transition
+	svg
+		margin-right: 10px
+		display: inline-block
+		width: 100%
+		max-width: 16px
+		height: 19px
+		#download-icon-line,
+		#download-icon-rectangle,
+		#download-icon-path
+			transition: $senary-transition
+	&:hover
+		span
+			color: $corporate-violet
+		svg
+			#download-icon-line,
+			#download-icon-rectangle,
+			#download-icon-path
+				stroke: $corporate-violet

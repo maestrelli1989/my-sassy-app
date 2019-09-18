@@ -1,0 +1,43 @@
+/**
+	Alert styles for Ukrposhta website project
+	Version: 1.0
+	Created: 22.07.2019
+	Author: Serhii Tiutin
+	Modified by: Serhii Tiutin
+	Website: https://ukrposhta.ua/
+	*/
+
+.alert-message
+	background-color: $corporate-orange
+	border-radius: $primary-radius
+	padding: 50px
+	margin: 40px auto 35px
+	h1, h2, h3, h4, h5, h6
+		padding-top: 0px
+	.phone-info
+		color: $corporate-white
+		font-family: $secondary-regular
+		font-size: 16px
+		line-height: 30px
+		display: block
+		margin-top: 10px
+		padding-bottom: 0px
+		a
+			color: $corporate-white
+			transition: $primary-transition
+			font-weight: $bold-weight
+			line-height: 30px
+			position: static
+			background-image: none
+			&:before
+				display: none
+			&:hover
+				color: $corporate-violet
+	& + h3
+		padding-top: 0px
+	& + h4
+		padding-top: 0px
+	& + h5
+		padding-top: 0px
+	& + h6
+		padding-top: 0px

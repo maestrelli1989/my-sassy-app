@@ -1,0 +1,58 @@
+/**
+	Table styles for Ukrposhta website project
+	Version: 1.0
+	Created: 22.07.2019
+	Author: Serhii Tiutin
+	Modified by: Serhii Tiutin
+	Website: https://ukrposhta.ua/
+	*/
+
+.table-responsive
+	& + h4
+		padding-top: 25px
+	& + p
+		padding-top: 20px
+	table
+		width: 100%
+		text-align: center
+		thead
+			background-color: $corporate-gainsboro
+			tr
+				th
+					color: $corporate-gray
+					font-family: $secondary-regular
+					font-size: 14px
+					line-height: 24px
+					padding: 16px 30px
+					border: 1px solid $corporate-ghost-white
+					font-weight: $regular-weight
+					h6
+						padding: 5px 0px
+					p
+						color: $corporate-gray
+						font-family: $secondary-regular
+						font-size: 14px
+						line-height: 24px
+						font-weight: $regular-weight
+						padding-bottom: 5px
+		tbody
+			background-color: $corporate-white
+			tr
+				&:nth-of-type(even)
+					background-color: $corporate-ghost-white
+				td
+					color: $corporate-violet
+					font-family: $secondary-regular
+					font-size: 16px
+					line-height: 30px
+					padding: 30px
+					border: 1px solid $corporate-gainsboro
+					sup
+						font-size: 10px
+						font-weight: $bold-weight
+					p
+						padding-bottom: 5px
+						&:last-child
+							padding-bottom: 0px
+					a
+						@extend %default-link

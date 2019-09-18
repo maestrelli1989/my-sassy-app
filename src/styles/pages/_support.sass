@@ -1,0 +1,366 @@
+/**
+	Style sheet for Ukrposhta website project page "Support"
+	Version: 1.0
+	Created: 22.07.2019
+	Author: Serhii Tiutin
+	Modified by: Serhii Tiutin
+	Website: https://ukrposhta.ua/
+	*/
+
+.support-page
+	.support-item-wrapper
+		display: flex
+		flex-direction: row
+		justify-content: flex-start
+		.support-item
+			margin-bottom: 20px
+			display: block
+			position: relative
+			width: 100%
+			max-width: 390px
+			height: 200px
+			padding: 0px
+			&:focus
+				outline: none
+			svg
+				width: 100%
+				max-width: 390px
+				height: 200px
+			/* Exchange Rate SVG */
+			#exchangeRateSvg
+				stop
+					transition: $secondary-transition
+			#exchangeRateBackground
+				fill: $corporate-white
+				transition: $secondary-transition
+			/* Guidelines SVG */
+			#guidelinesSvg
+				stop
+					transition: $secondary-transition
+			#guidelinesBackground
+				fill: $corporate-white
+				transition: $secondary-transition
+			/* Administrations SVG */
+			#administrationsSvg
+				stop
+					transition: $secondary-transition
+			#administrationsBackground
+				stop
+					transition: $secondary-transition
+			/* Samples SVG */
+			#samplesSvg
+				stop
+					transition: $secondary-transition
+			#samplesBackground
+				fill: $corporate-white
+				transition: $secondary-transition
+			.samplesCircleBackground,
+			.samplesCircleBackground-4
+				fill: #B5C7E2
+				transition: $secondary-transition
+			.samplesCircleBackground-2,
+			.samplesCircleBackground-3
+				fill: $secondary-lavender
+				transition: $secondary-transition
+			.samplesCircleBackground-3
+				opacity: 0.8
+			.samplesCircleBackground-5
+				fill: #B5C7E2
+				transition: $secondary-transition
+			.samplesCircleBackground-6
+				fill: #182750
+				transition: $secondary-transition
+			.samplesCircleBackground-7
+				fill: $corporate-white
+			.flip-chart
+				fill: #E9EDF0
+			/* Prohibited Items SVG */
+			#prohibitedItemsSvg
+				stop
+					transition: $secondary-transition
+			#prohibitedItemsBackground
+				fill: $corporate-white
+				transition: $secondary-transition
+			#prohibitedItemsBackground-7
+				fill: #182750
+			.item-content
+				width: 100%
+				max-width: 390px
+				h4
+					position: absolute
+					top: 30px
+					left: 30px
+					color: $corporate-violet
+					font-family: $primary-bold
+					font-size: 22px
+					font-weight: $bold-weight
+					line-height: 30px
+					transition: $primary-transition
+					padding: 0px
+			&:hover
+				.item-content
+					h4
+						color: $corporate-white
+				/* Exchange Rate SVG */
+				#exchangeRateBackground
+					fill: $secondary-pale-turquoise
+				#linearGradientContinent-1,
+				#linearGradientContinent-2,
+				#linearGradientContinent-3,
+				#linearGradientContinent-4,
+				#linearGradientContinent-5,
+				#linearGradientContinent-6,
+				#linearGradientContinent-7
+					stop
+						&:first-child
+							stop-color: $secondary-pale-turquoise
+						&:last-child
+							stop-color: $corporate-white
+				#linearGradientDollar-1,
+				#linearGradientDollar-2,
+				#linearGradientDollar-3,
+				#linearGradientDollar-4,
+				#linearGradientDollar-5,
+				#linearGradientDollar-6,
+				#linearGradientDollar-7,
+				#linearGradientDollar-8,
+				#linearGradientDollar-9,
+				#linearGradientDollar-10
+					stop
+						&:first-child
+							stop-color: #FEB52A
+						&:last-child
+							stop-color: #FEDA2A
+				#linearGradientDollar-11,
+				#linearGradientDollar-12,
+				#linearGradientDollar-13,
+				#linearGradientDollar-14,
+				#linearGradientDollar-15,
+				#linearGradientDollar-16,
+				#linearGradientDollar-17,
+				#linearGradientDollar-18,
+				#linearGradientDollar-19,
+				#linearGradientDollar-20
+					stop
+						&:first-child
+							stop-color: $secondary-lemon
+						&:last-child
+							stop-color: #FEDD9A
+				#linearGradientDollar-21
+					stop
+						&:first-child
+							stop-color: $secondary-lemon
+						&:nth-child(2)
+							stop-color: $secondary-lemon
+						&:nth-child(3)
+							stop-color: $secondary-lemon
+						&:nth-child(4)
+							stop-color: #FEDD2A
+						&:last-child
+							stop-color: #FEDD2A
+				#linearGradientDollarSignBackground-1
+					stop
+						&:first-child
+							stop-color: $corporate-white
+						&:last-child
+							stop-color: $corporate-white
+				#linearGradientDollarSignBackground-2
+					stop
+						&:first-child
+							stop-color: #FEB52A
+						&:last-child
+							stop-color: #FEDA2A
+				#linearGradientDollarSign-1
+					stop
+						&:first-child
+							stop-color: #FECC00
+						&:nth-child(2)
+							stop-color: #FECC00
+						&:nth-child(3)
+							stop-color: #FEFF6D
+						&:nth-child(4)
+							stop-color: #FEFF6D
+						&:last-child
+							stop-color: #FEFF6D
+				#linearGradientDollarSign-2
+					stop
+						&:first-child
+							stop-color: #FEB52A
+						&:last-child
+							stop-color: #B67E00
+				/* Guidelines SVG */
+				#guidelinesBackground
+					fill: $corporate-yellow
+				#linearGradientCircleGuidelines-1
+					stop
+						&:first-child
+							stop-color: #FDB23D
+						&:nth-child(2)
+							stop-color: #FDB539
+						&:nth-child(3)
+							stop-color: #FEBD2D
+						&:nth-child(4)
+							stop-color: #FECB19
+						&:last-child
+							stop-color: $corporate-yellow
+				#linearGradientCircleGuidelines-2
+					stop
+						&:first-child
+							stop-color: #FDB23D
+						&:nth-child(2)
+							stop-color: #FDB539
+						&:nth-child(3)
+							stop-color: #FEBD2D
+						&:nth-child(4)
+							stop-color: #FECB19
+						&:last-child
+							stop-color: $corporate-yellow
+				#linearGradientPathGuidelines-1
+					stop
+						&:first-child
+							stop-color: #FDB23D
+						&:nth-child(2)
+							stop-color: #FDB835
+						&:nth-child(3)
+							stop-color: #FEC71E
+						&:last-child
+							stop-color: $corporate-yellow
+				/* Administrations SVG */
+				#administrationsBackground
+					stop
+						&:first-child
+							stop-color: $secondary-cornflower
+						&:nth-child(2)
+							stop-color: #4C92E3
+						&:nth-child(3)
+							stop-color: #5199E8
+						&:nth-child(4)
+							stop-color: #5AA5F1
+						&:nth-child(5)
+							stop-color: #68B5FD
+						&:last-child
+							stop-color: #6AB8FF
+				#administrationsBackground-2
+					stop
+						&:first-child
+							stop-color: $secondary-sky-blue
+						&:last-child
+							stop-color: $secondary-sky-blue
+							stop-opacity: 0
+				#administrationsBackground-3
+					stop
+						&:first-child
+							stop-color: $secondary-sky-blue
+						&:last-child
+							stop-color: $secondary-sky-blue
+							stop-opacity: 0
+				#administrationsBackground-4
+					stop
+						&:first-child
+							stop-color: $secondary-lavender
+						&:last-child
+							stop-color: $secondary-lavender
+							stop-opacity: 1
+				/* Samples SVG */
+				#samplesBackground
+					fill: $corporate-red
+				.samplesCircleBackground,
+				.samplesCircleBackground-4
+					fill: $secondary-coral
+				.samplesCircleBackground-2
+					fill: $secondary-coral
+				.samplesCircleBackground-3
+					fill: $corporate-white
+					opacity: 0.4
+				.samplesCircleBackground-5
+					fill: $corporate-red
+				.samplesCircleBackground-6
+					fill: $secondary-chocolate
+				#samplesPencil
+					stop
+						&:first-child
+							stop-color: $secondary-chocolate
+						&:nth-child(2)
+							stop-color: #F89E2D
+						&:last-child
+							stop-color: #FAB614
+				/* Prohibited Items Svg */
+				#prohibitedItemsBackground
+					fill: $secondary-orchid
+				#prohibitedItemsBackground-1
+					stop
+						&:first-child
+							stop-color: $secondary-purple
+						&:last-child
+							stop-color: $secondary-orchid
+				#prohibitedItemsBackground-2,
+				#prohibitedItemsBackground-3
+					stop
+						&:first-child
+							stop-color: $secondary-purple
+						&:last-child
+							stop-color: $secondary-orchid
+				#prohibitedItemsBackground-4
+					stop
+						&:first-child
+							stop-color: #B6C7DA
+						&:last-child
+							stop-color: #C0D5E0
+				#prohibitedItemsBackground-5
+					stop
+						&:first-child
+							stop-color: #EFF2F4
+						&:last-child
+							stop-color: $corporate-white
+				#prohibitedItemsBackground-6
+					stop
+						&:first-child
+							stop-color: $corporate-white
+							stop-opacity: 0
+						&:last-child
+							stop-color: #000000
+				#prohibitedItemsBackground-8
+					stop
+						&:first-child
+							stop-color: #3D589D
+						&:nth-child(2)
+							stop-color: #415C9F
+						&:nth-child(3)
+							stop-color: #4D67A6
+						&:nth-child(4)
+							stop-color: #617AB2
+						&:nth-child(5)
+							stop-color: #7E94C3
+						&:nth-child(6)
+							stop-color: #A2B5D8
+						&:last-child
+							stop-color: $secondary-light-steel
+				#prohibitedItemsBackground-9
+					stop
+						&:first-child
+							stop-color: #3D589D
+						&:nth-child(2)
+							stop-color: #415C9F
+						&:nth-child(3)
+							stop-color: #4D67A6
+						&:nth-child(4)
+							stop-color: #617AB2
+						&:nth-child(5)
+							stop-color: #7E94C3
+						&:nth-child(6)
+							stop-color: #A2B5D8
+						&:last-child
+							stop-color: $secondary-light-steel
+				#prohibitedItemsBackground-10,
+				#prohibitedItemsBackground-11
+					stop
+						&:first-child
+							stop-color: #DEE5F5
+						&:nth-child(2)
+							stop-color: #DAE2F3
+						&:nth-child(3)
+							stop-color: #CED9ED
+						&:nth-child(4)
+							stop-color: #BAC9E4
+						&:last-child
+							stop-color: $secondary-light-steel

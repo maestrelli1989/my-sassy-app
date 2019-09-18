@@ -1,0 +1,210 @@
+/**
+	Footer styles for Ukrposhta website project
+	Version: 1.0
+	Created: 22.07.2019
+	Author: Serhii Tiutin
+	Modified by: Serhii Tiutin
+	Website: https://ukrposhta.ua/
+	*/
+
+.footer
+	background-color: #1D2023
+	height: 750px
+	.container
+		.footer-menu
+			border-bottom: 1px solid $corporate-gray
+			padding-bottom: 50px
+			.row
+				.footer-menu-col
+					.footer-menu-title
+						color: $corporate-white
+						font-family: $primary-bold
+						font-size: 16px
+						font-weight: $bold-weight
+						line-height: 20px
+						padding-top: 100px
+					.footer-menu-link
+						color: $corporate-gray
+						font-family: $primary-regular
+						font-size: 16px
+						font-weight: $regular-weight
+						line-height: 24px
+						display: block
+						padding-top: 10px
+						text-decoration: none
+						transition: $primary-transition
+						&:hover
+							color: $corporate-white
+							font-weight: $regular-weight
+							text-decoration: none
+		.mobile-footer
+			display: none
+			border-bottom: 1px solid $corporate-gray
+			.accordion
+				padding-top: 5px
+				padding-bottom: 30px
+				.mobile-footer-accordion-item
+					padding-top: 25px
+					.accordion-headline
+						position: relative
+						span
+							color: $corporate-white
+							font-family: $primary-bold
+							font-size: 16px
+							font-weight: $bold-weight
+							line-height: 20px
+							text-decoration: none
+						&:hover,
+						&:active,
+						&:focus
+							text-decoration: none
+						.fas
+							color: $corporate-white
+							position: relative
+							top: 3px
+							left: 7px
+					.collapse,
+					.collapse.show,
+					.collapsing
+						.links-wrapper
+							padding-top: 5px
+							li
+								padding-top: 15px
+								.mobile-footer-menu-link
+									color: $corporate-gray
+									font-family: $primary-regular
+									font-size: 16px
+									font-weight: $regular-weight
+									line-height: 20px
+									text-decoration: none
+									transition: $primary-transition
+									&:hover
+										color: $corporate-white
+										font-weight: $regular-weight
+										text-decoration: none
+		.footer-info-block
+			.row
+				.footer-info-col
+					padding-top: 50px
+				.address-info-col
+					p
+						color: $corporate-gray
+						font-family: $secondary-regular
+						font-size: 14px
+						font-weight: $regular-weight
+						line-height: 24px
+					.footer-menu-default-link
+						color: $corporate-gray
+						font-family: $secondary-regular
+						font-size: 14px
+						font-weight: $regular-weight
+						line-height: 24px
+						transition: $primary-transition
+						background: none
+						display: inline-block
+						&:hover
+							color: $corporate-white
+							font-weight: $regular-weight
+							text-decoration: none
+				.call-center-col
+					p
+						color: $corporate-gray
+						font-family: $secondary-regular
+						font-size: 14px
+						font-weight: $regular-weight
+						line-height: 24px
+					.footer-menu-custom-link
+						color: $corporate-white
+						font-family: $primary-bold
+						font-size: 16px
+						font-weight: $bold-weight
+						line-height: 24px
+						padding-left: 10px
+						transition: $primary-transition
+						background: none
+						display: inline-block
+						&:hover
+							color: $corporate-gray
+							font-weight: $bold-weight
+							text-decoration: none
+						&:before
+							display: none
+					.footer-menu-default-link
+						color: $corporate-gray
+						font-family: $secondary-regular
+						font-size: 14px
+						font-weight: $regular-weight
+						line-height: 24px
+						transition: $primary-transition
+						background: none
+						display: inline-block
+						&:hover
+							color: $corporate-white
+							font-weight: $regular-weight
+							text-decoration: none
+						&:before
+							display: none
+				.social-col
+					.custom-fa
+						color: $corporate-gray
+						font-family: "Font Awesome 5 Brands"
+						font-size: 20px
+						letter-spacing: 16.67px
+						line-height: 21px
+						transition: $primary-transition
+						margin-right: 5px
+						&:hover
+							color: $corporate-white
+				.lang-col
+					.switch-language
+						text-align: right
+						margin-bottom: 20px
+						li
+							display: inline
+							padding: 0px 6px 0px 10px
+							border-left: 1px solid $corporate-gray
+							margin: 0px
+							a
+								color: $corporate-gray
+								font-family: $primary-regular
+								font-size: 16px
+								font-weight: $regular-weight
+								line-height: 20px
+								transition: $primary-transition
+								&:hover
+									color: $corporate-white
+									font-weight: $regular-weight
+									text-decoration: none
+								&.active-locale
+									color: $corporate-white
+							&:first-child
+								border-left: 0px
+					.font-resize-line
+						text-align: right
+						li
+							display: inline
+							padding: 0px 6px 0px 10px
+							border-left: 1px solid $corporate-gray
+							margin: 0px
+							a
+								color: $corporate-gray
+								font-family: $primary-regular
+								font-size: 16px
+								font-weight: $regular-weight
+								line-height: 20px
+								transition: $primary-transition
+								&:hover
+									color: $corporate-white
+									font-weight: $regular-weight
+									text-decoration: none
+							&:first-child
+								border-left: 0px
+.copyright-block
+	background-color: #181C1F
+	p
+		color: $corporate-gray
+		font-family: $secondary-regular
+		font-size: 14px
+		line-height: 50px
+		text-align: center
+		padding: 0px

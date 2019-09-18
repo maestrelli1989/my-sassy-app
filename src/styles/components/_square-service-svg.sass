@@ -1,0 +1,143 @@
+/**
+	Square services svg styles for Ukrposhta website project
+	Version: 1.0
+	Created: 22.07.2019
+	Author: Serhii Tiutin
+	Modified by: Serhii Tiutin
+	Website: https://ukrposhta.ua/
+	*/
+
+.square-service-svg,
+.square-service-svg:focus,
+.square-service-svg:active
+	margin: 0px auto 30px
+	display: block
+	position: relative
+	height: 270px
+	width: 100%
+	max-width: 270px
+	outline: none
+	h4
+		position: absolute
+		top: 30px
+		left: 30px
+		transition: $primary-transition
+		padding: 0px
+		.block-link
+			font-size: 14px
+			line-height: 20px
+			position: static
+			display: block
+			padding-top: 10px
+	#ExpresSquareSvg,
+	#StandartSquareSvg,
+	#SmartboxSquareSvg,
+	#PostalTransfersSquareSvg,
+	#OnlineSquareSvg,
+	#InsuranceSquareSvg,
+	#ExportSquareSvg,
+	#ImportSquareSvg,
+	#CourierSquareSvg,
+	#StampSquareSvg,
+	#IntTransfersSquareSvg
+		stop
+			transition: $secondary-transition
+	#MaskExpresSquare,
+	#MaskStandartSquare,
+	#MaskSmartboxSquare,
+	#MaskImportSquare,
+	#MaskExportSquare,
+	#MaskPostalTransfersSquare,
+	#MaskIntTransfersSquare,
+	#MaskInsuranceSquare,
+	#MaskOnlineSquare,
+	#MaskStampSquare,
+	#MaskCourierSquare
+		transition: $quinary-transition
+	&:hover
+		h4,
+		.block-link
+			color: $corporate-white
+		#MaskExpresSquare
+			fill: $secondary-orchid
+		#linearGradientSquareExpres-3,
+		#linearGradientSquareExpres-6
+			stop
+				&:first-child
+					stop-color: $secondary-indigo
+				&:last-child
+					stop-color: $secondary-orchid
+		#MaskStandartSquare
+			fill: $corporate-orange
+		#linearGradientSquareStandart-3
+			stop
+				&:first-child
+					stop-color: $corporate-yellow
+				&:last-child
+					stop-color: $corporate-yellow
+		#MaskSmartboxSquare
+			fill: $corporate-red
+		#linearGradientSquareSmartbox-3
+			stop
+				&:first-child
+					stop-color: $corporate-red
+				&:last-child
+					stop-color: $secondary-salmon
+		#MaskImportSquare
+			fill: $secondary-cornflower
+		#linearGradientSquareImport-3
+			stop
+				&:first-child
+					stop-color: $corporate-white
+				&:last-child
+					stop-color: $secondary-cornflower
+		#MaskExportSquare
+			fill: $secondary-pale-turquoise
+		#MaskPostalTransfersSquare
+			fill: $secondary-pale-turquoise
+		#linearGradientSquarePostalTransfers-1
+			stop
+				&:first-child
+					stop-color: rgba(0, 126, 145, 0.1)
+				&:last-child
+					stop-color: rgba(0, 126, 145, 0.1)
+		#MaskIntTransfersSquare
+			fill: $secondary-cornflower
+		#linearGradientSquareIntTransfers-1
+			stop
+				&:first-child
+					stop-color: $corporate-white
+				&:last-child
+					stop-color: $secondary-cornflower
+		#MaskInsuranceSquare
+			fill: $corporate-red
+		#linearGradientSquareInsurance-1
+			stop
+				&:first-child
+					stop-color: $corporate-red
+				&:last-child
+					stop-color: $secondary-salmon
+		#MaskOnlineSquare
+			fill: $corporate-orange
+		#linearGradientSquareOnline-1
+			stop
+				&:first-child
+					stop-color: $corporate-yellow
+				&:last-child
+					stop-color: $corporate-yellow
+		#MaskStampSquare
+			fill: $corporate-red
+		#linearGradientSquareStamp-3
+			stop
+				&:first-child
+					stop-color: $corporate-red
+				&:last-child
+					stop-color: $secondary-salmon
+		#MaskCourierSquare
+			fill: $corporate-yellow
+		#linearGradientSquareCourier-3
+			stop
+				&:first-child
+					stop-color: $corporate-orange
+				&:last-child
+					stop-color: $corporate-orange

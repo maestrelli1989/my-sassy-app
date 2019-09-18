@@ -1,0 +1,64 @@
+/**
+	Extra news block styles for Ukrposhta website project
+	Version: 1.0
+	Created: 22.07.2019
+	Author: Serhii Tiutin
+	Modified by: Serhii Tiutin
+	Website: https://ukrposhta.ua/
+	*/
+
+.extra-news-block
+	.slick-dotted.slick-slider
+		margin-bottom: 0px
+	.extra-news-slider
+		.extra-news-slider-item
+			height: 165px
+			width: 100%
+			max-width: 1170px
+			border-radius: $primary-radius
+			background-color: $corporate-orange
+			padding: 50px
+			&:focus,
+			&:active
+				outline: none
+			.slider-item-content-wrapper
+				padding-left: 50px
+				position: relative
+				&:focus,
+				&:active
+					outline: none
+				h4
+					padding: 0px
+					overflow: hidden
+					display: -webkit-box
+					-webkit-line-clamp: 1
+					-webkit-box-orient: vertical
+					max-height: 30px
+				p
+					padding: 10px 0px 0px
+					overflow: hidden
+					display: -webkit-box
+					-webkit-line-clamp: 1
+					-webkit-box-orient: vertical
+					max-height: 45px
+				&:before
+					@extend %pseudo-elem-base
+					left: 0px
+					top: 0px
+					background-image: url(../images/info-icon.png)
+					background-repeat: no-repeat
+					width: 25px
+					height: 25px
+		.slick-dots
+			bottom: -35px
+			li
+				button
+					&:before
+						font-size: 10px
+						color: $corporate-gray
+						opacity: 0.5
+				&.slick-active
+					button
+						&:before
+							color: $corporate-gray
+							opacity: 1

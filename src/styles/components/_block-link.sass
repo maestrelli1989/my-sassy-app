@@ -1,0 +1,31 @@
+/**
+	Block link styles for Ukrposhta website project
+	Version: 1.0
+	Created: 22.07.2019
+	Author: Serhii Tiutin
+	Modified by: Serhii Tiutin
+	Website: https://ukrposhta.ua/
+	*/
+
+.block-link
+	color: $corporate-violet
+	font-family: $primary-bold!important
+	font-size: 16px
+	line-height: 24px
+	display: inline-block
+	font-weight: $bold-weight!important
+	transition: $primary-transition
+	position: relative
+	background-image: none!important
+	&:before
+		display: none
+	&:after
+		font-family: "Font Awesome 5 Free"
+		content: "\f105"
+		display: inline-block
+		padding-left: 3px
+		vertical-align: middle
+		font-weight: $black-weight
+	&:hover
+		text-decoration: none
+		color: $corporate-gray

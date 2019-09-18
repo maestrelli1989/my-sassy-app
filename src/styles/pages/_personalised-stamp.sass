@@ -1,0 +1,52 @@
+/**
+	Style sheet for Ukrposhta website project page "Personalised stamp"
+	Version: 1.0
+	Created: 22.07.2019
+	Author: Serhii Tiutin
+	Modified by: Serhii Tiutin
+	Website: https://ukrposhta.ua/
+	*/
+
+.personalised-stamp-page
+	.banner-wrapper
+		.banner
+			background-image: url('../images/banners/stamp.png')
+			background-size: contain
+			background-position-x: right
+	.content-wrapper
+		.personalised-stamp-slider
+			margin-bottom: 10px
+			.slick-prev
+				left: 40px
+				z-index: 1
+				&:before
+					display: none
+				.fas
+					font-size: 26px
+					color: $corporate-white
+			.slick-next
+				right: 40px
+				z-index: 1
+				&:before
+					display: none
+				.fas
+					font-size: 26px
+					color: $corporate-white
+			.image-wrapper
+				img
+					width: 100%
+					max-width: 1170px
+					border-radius: $primary-radius
+			.slick-dots
+				bottom: 25px
+				li
+					button
+						&:before
+							font-size: 10px
+							opacity: 0.5
+							color: $corporate-white
+							transition: $primary-transition
+					&.slick-active
+						button
+							&:before
+								opacity: 1

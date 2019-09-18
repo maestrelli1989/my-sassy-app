@@ -1,0 +1,48 @@
+/**
+	Style sheet for Ukrposhta website project page "Standart"
+	Version: 1.0
+	Created: 22.07.2019
+	Author: Serhii Tiutin
+	Modified by: Serhii Tiutin
+	Website: https://ukrposhta.ua/
+	*/
+
+.standart-page
+	.banner-wrapper
+		.banner
+			background-image: url('../images/banners/standart.png')
+			background-size: 36%
+			background-position: right 210px top -30px
+	.content-wrapper
+		.additional-link-wrapper
+			margin-bottom: 0px
+			.additional-link
+				&:nth-child(3),
+				&:last-child
+					margin-bottom: 0px
+		.tariffs-block
+			justify-content: flex-start
+			padding: 0px
+			margin-bottom: 30px
+			.tariffs-item
+				width: 100%
+				max-width: 370px
+				border: 2px solid $corporate-gainsboro
+				border-radius: $primary-radius
+				padding: 30px
+				img
+					width: 100%
+					max-width: 310px
+					height: 190px
+				.description-line
+					display: flex
+					flex-direction: row
+					justify-content: space-between
+					padding-top: 20px
+					h4
+						padding: 0px
+					.weight
+						color: $corporate-gray
+						font-family: $secondary-regular
+						font-size: 14px
+						line-height: 32px

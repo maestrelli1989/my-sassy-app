@@ -1,0 +1,87 @@
+/**
+	Additional link styles for Ukrposhta website project
+	Version: 1.0
+	Created: 22.07.2019
+	Author: Serhii Tiutin
+	Modified by: Serhii Tiutin
+	Website: https://ukrposhta.ua/
+	*/
+
+.additional-link-wrapper
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+	flex-wrap: wrap
+	margin: 30px auto 20px
+	.additional-link
+		width: 100%
+		display: flex
+		align-items: center
+		max-width: 570px
+		border-radius: $primary-radius
+		background-color: $corporate-white
+		margin-bottom: 30px
+		transition: $primary-transition
+		padding: 30px 40px
+		span
+			color: $corporate-gray
+			font-family: $primary-normal
+			font-size: 20px
+			font-weight: $normal-weight
+			line-height: 32px
+			text-decoration: none
+			display: inline-block
+			transition: $primary-transition
+		svg
+			margin-right: 15px
+			display: inline-block
+			width: 100%
+			max-width: 20px
+			#about-service-icon,
+			#tariffs-icon,
+			#dispatch-icon,
+			#faq-icon,
+			#target-icon,
+			#for-business-icon,
+			#download-icon-line,
+			#download-icon-rectangle,
+			#download-icon-path
+				transition: $senary-transition
+			#calendar-icon,
+			#partners-icon,
+			#settings-icon,
+			#documents-icon,
+			#history-icon,
+			#for-business-icon-fill,
+			#students-icon,
+			#book-icon,
+			#preference-icon
+				transition: $quaternary-transition
+		&:hover
+			text-decoration: none
+			cursor: pointer
+			box-shadow: $primary-box-shadow
+			span
+				text-decoration: none
+				color: $corporate-violet
+			svg
+				#calendar-icon,
+				#partners-icon,
+				#settings-icon,
+				#documents-icon,
+				#history-icon,
+				#for-business-icon-fill,
+				#students-icon,
+				#book-icon,
+				#preference-icon
+					fill: $corporate-violet
+				#about-service-icon,
+				#tariffs-icon,
+				#dispatch-icon,
+				#faq-icon,
+				#target-icon,
+				#for-business-icon,
+				#download-icon-line,
+				#download-icon-rectangle,
+				#download-icon-path
+					stroke: $corporate-violet

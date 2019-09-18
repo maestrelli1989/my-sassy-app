@@ -1,0 +1,110 @@
+/**
+	Rectangle services svg styles for Ukrposhta website project
+	Version: 1.0
+	Created: 22.07.2019
+	Author: Serhii Tiutin
+	Modified by: Serhii Tiutin
+	Website: https://ukrposhta.ua/
+	*/
+
+.rectangle-service-svg,
+.rectangle-service-svg:focus,
+.rectangle-service-svg:active
+	margin: 0px auto 30px
+	display: block
+	position: relative
+	height: 180px
+	width: 100%
+	max-width: 370px
+	&:focus
+		outline: none
+	h4
+		position: absolute
+		top: 30px
+		left: 30px
+		transition: $primary-transition
+		padding: 0px
+		.block-link
+			font-size: 14px
+			line-height: 20px
+			position: static
+			display: block
+			padding-top: 10px
+	#ExpressRectangleSvg,
+	#StandartRectangleSvg,
+	#SmartboxRectangleSvg,
+	#ImportRectangleSvg,
+	#ExportRectangleSvg,
+	#StampRectangleSvg,
+	#CourierRectangleSvg
+		stop
+			transition: $secondary-transition
+	#MaskExpressRectangle,
+	#MaskStandartRectangle,
+	#MaskSmartboxRectangle,
+	#MaskImportRectangle,
+	#MaskExportRectangle,
+	#MaskStampRectangle,
+	#MaskCourierRectangle
+		transition: $quinary-transition
+	#linearGradientRectangleStamp-7
+		stop
+			&:first-child
+				stop-color: #93a9d6
+			&:last-child
+				stop-color: #e0e7f7
+	&:hover
+		h4,
+		.block-link
+			color: $corporate-white
+		#MaskExpressRectangle
+			fill: $secondary-orchid
+		#linearGradientRectangleExpres-1,
+		#linearGradientRectangleExpres-2
+			stop
+				&:first-child
+					stop-color: $secondary-indigo
+				&:last-child
+					stop-color: $secondary-orchid
+		#MaskStandartRectangle
+			fill: $corporate-orange
+		#linearGradientRectangleStandart-1
+			stop
+				&:first-child
+					stop-color: $corporate-yellow
+				&:last-child
+					stop-color: $corporate-yellow
+		#MaskSmartboxRectangle
+			fill: $corporate-red
+		#linearGradientRectangleSmartbox-1
+			stop
+				&:first-child
+					stop-color: $corporate-red
+				&:last-child
+					stop-color: $secondary-salmon
+		#MaskImportRectangle
+			fill: $secondary-cornflower
+		#linearGradientRectangleImport-1
+			stop
+				&:first-child
+					stop-color: $corporate-white
+				&:last-child
+					stop-color: $secondary-cornflower
+		#MaskExportRectangle
+			fill: $secondary-pale-turquoise
+		#MaskCourierRectangle
+			fill: $corporate-yellow
+		#linearGradientRectangleCourier-1
+			stop
+				&:first-child
+					stop-color: $corporate-orange
+				&:last-child
+					stop-color: $corporate-orange
+		#MaskStampRectangle
+			fill: $corporate-red
+		#linearGradientRectangleStamp-7
+			stop
+				&:first-child
+					stop-color: $corporate-red
+				&:last-child
+					stop-color: $secondary-salmon

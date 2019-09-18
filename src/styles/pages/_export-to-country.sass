@@ -1,0 +1,42 @@
+/**
+	Style sheet for Ukrposhta website project page "Export to %%countryname%%"
+	Version: 1.0
+	Created: 22.07.2019
+	Author: Serhii Tiutin
+	Modified by: Serhii Tiutin
+	Website: https://ukrposhta.ua/
+	*/
+	
+.export-to-country-page
+	.banner-wrapper
+		background-color: $corporate-orange
+		.banner
+			background-image: url('../images/banners/e-commerce-export-solution.png')
+			background-size: contain
+			background-position-x: right
+	.additional-link-wrapper
+		margin-top: 10px
+		.additional-link
+			max-width: 270px
+	.marketplace-wrapper
+		justify-content: space-between
+		padding: 0px 15px
+		.marketplace-item
+			border-radius: $primary-radius
+			border: 2px solid $corporate-gainsboro
+			padding: 30px
+			transition: $primary-transition
+			margin-bottom: 30px
+			width: 100%
+			max-width: 570px
+			h5
+				padding: 0px
+				transition: $primary-transition
+			p
+				padding: 10px 0px 0px
+				transition: $primary-transition
+			&:hover
+				text-decoration: none
+				box-shadow: $primary-box-shadow
+		& + h4
+			padding-top: 0px

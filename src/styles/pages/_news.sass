@@ -1,0 +1,43 @@
+/**
+	Style sheet for Ukrposhta website project page "News"
+	Version: 1.0
+	Created: 22.07.2019
+	Author: Serhii Tiutin
+	Modified by: Serhii Tiutin
+	Website: https://ukrposhta.ua/
+	*/
+
+.news-page
+	.extra-news-block
+		margin-bottom: 0px
+		padding-bottom: 60px
+	.latest-news
+		display: flex
+		flex-direction: row
+		align-items: flex-start
+		width: 100%
+		max-width: 1170px
+		background-color: $corporate-white
+		margin-bottom: 30px
+		transition: $primary-transition
+		border-radius: $primary-radius
+		&:hover
+			box-shadow: $primary-box-shadow
+		.flex-left
+			width: 100%
+			max-width: 350px
+			img
+				border-radius: $primary-radius
+		.flex-right
+			width: calc(100% - 350px)
+			padding: 50px 50px 50px 30px
+			.date
+				color: $corporate-gray
+				font-family: $secondary-regular
+				font-size: 14px
+				line-height: 24px
+			h4
+				padding-top: 20px
+				padding-bottom: 10px
+			p
+				color: $corporate-gray

@@ -1,0 +1,47 @@
+/**
+	Special list styles for Ukrposhta website project
+	Version: 1.0
+	Created: 22.07.2019
+	Author: Serhii Tiutin
+	Modified by: Serhii Tiutin
+	Website: https://ukrposhta.ua/
+	*/
+
+.special-list
+	padding-top: 10px
+	.special-list-item
+		padding-left: 120px
+		padding-bottom: 30px
+		position: relative
+		height: auto
+		min-height: 130px
+		&:last-child
+			padding-bottom: 0px
+		svg
+			@extend %pseudo-elem-base
+			width: 90px
+			height: 90px
+			top: 0px
+			left: 0px
+		h4
+			padding: 10px 0px
+		span
+			color: $corporate-gray
+			font-family: $secondary-regular
+			font-size: 16px
+			line-height: 30px
+			display: block
+			a
+				color: $corporate-gray
+				font-family: $secondary-regular
+				display: inline-block
+				transition: $tertiary-transition
+				background-image: linear-gradient(to right, $corporate-gray 0%, $corporate-gray 100%)
+				background-repeat: no-repeat
+				background-position: 0% 85%
+				background-size: 100% 1px
+				&:hover
+					color: $corporate-gray
+					text-decoration: none
+					cursor: pointer
+					background-size: 0% 1px
